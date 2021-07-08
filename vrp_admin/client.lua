@@ -28,8 +28,8 @@ end)
 -----------------------------------------------------------------------------------------------------------------------------------------
 -- SPAWNAR VEICULO
 -----------------------------------------------------------------------------------------------------------------------------------------
-RegisterNetEvent('spawnarveiculo')
-AddEventHandler('spawnarveiculo',function(name)
+RegisterNetEvent('car')
+AddEventHandler('car',function(name)
 	local mhash = GetHashKey(name)
 	while not HasModelLoaded(mhash) do
 		RequestModel(mhash)
@@ -112,8 +112,8 @@ end)
 -----------------------------------------------------------------------------------------------------------------------------------------
 -- DELETAR NPCS MORTOS
 -----------------------------------------------------------------------------------------------------------------------------------------
-RegisterNetEvent('delnpcs')
-AddEventHandler('delnpcs',function()
+RegisterNetEvent('limpararea')
+AddEventHandler('limpararea',function()
 	local handle,ped = FindFirstPed()
 	local finished = false
 	repeat
